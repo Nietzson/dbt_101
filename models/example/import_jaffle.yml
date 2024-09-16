@@ -1,0 +1,12 @@
+
+version: 1
+
+models:
+    - name: import_jaffle_data
+      description: "Import data from the dbt-tutorial public db"
+      columns:
+          - name: id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
